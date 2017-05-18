@@ -17,13 +17,13 @@ from spynnaker8_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
     import TimingDependenceRecurrent as RecurrentRule
 from spynnaker8_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
     .timing_dependence_spike_nearest_pair import \
-    TimingDependenceSpikeNearestPair
+    TimingDependenceSpikeNearestPair as SpikeNearestPair
 from spynnaker8_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
     .timing_dependence_vogels_2011 \
     import TimingDependenceVogels2011 as Vogels2011Rule
 from spynnaker8_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
     .timing_dependence_pfister_spike_triplet import \
-    TimingDependencePfisterSpikeTriplet
+    TimingDependencePfisterSpikeTriplet as PfisterSpikeTriplet
 
 # plastic weight spynnaker 8
 from spynnaker8_extra_pynn_models.neuron.plasticity.stdp.weight_dependence \
@@ -36,8 +36,8 @@ __all__ = [
 
     # spynnaker 8 plastic stuff
     'WeightDependenceAdditiveTriplet',
-    'TimingDependencePfisterSpikeTriplet',
-    'TimingDependenceSpikeNearestPair',
+    'PfisterSpikeTriplet',
+    'SpikeNearestPair',
     'RecurrentRule', 'Vogels2011Rule']
 
 
