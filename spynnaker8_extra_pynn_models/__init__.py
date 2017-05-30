@@ -1,3 +1,5 @@
+from spynnaker.pyNN.abstract_spinnaker_common import AbstractSpiNNakerCommon
+
 from spynnaker_extra_pynn_models import model_binaries
 
 # spynnaker 8 extra models
@@ -30,6 +32,8 @@ from spynnaker8_extra_pynn_models.neuron.plasticity.stdp.weight_dependence \
     .weight_dependence_additive_triplet import \
     WeightDependenceAdditiveTriplet
 
+import os
+
 __all__ = [
     # spynnaker 8 models
     'IFCurDelta', 'IFCurrExpCa2Adaptive', 'IFCondExpStock',
@@ -42,12 +46,9 @@ __all__ = [
 
 
 def _init_module():
-    # import logging
-    import os
-    from spynnaker.pyNN.spinnaker_common import SpiNNakerCommon
 
     # Register this path with SpyNNaker
-    SpiNNakerCommon.register_binary_search_path(
+    AbstractSpiNNakerCommon.register_binary_search_path(
         os.path.dirname(model_binaries.__file__))
 
 
