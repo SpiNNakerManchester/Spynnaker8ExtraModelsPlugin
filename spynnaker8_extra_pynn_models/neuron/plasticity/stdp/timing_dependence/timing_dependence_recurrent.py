@@ -6,21 +6,16 @@ from spynnaker_extra_pynn_models.neuron.plasticity.stdp.\
 class TimingDependenceRecurrent(CommonTimingDependenceRecurrent):
 
     def __init__(
-            self, accumulator_depression=
-            CommonTimingDependenceRecurrent.default_parameters[
-                'accumulator_depression'],
-            accumulator_potentiation=
-            CommonTimingDependenceRecurrent.default_parameters[
-                'accumulator_potentiation'],
-            mean_pre_window=
-            CommonTimingDependenceRecurrent.default_parameters[
-                'mean_pre_window'],
-            mean_post_window=
-            CommonTimingDependenceRecurrent.default_parameters[
-                'mean_post_window'],
-            dual_fsm=
-            CommonTimingDependenceRecurrent.default_parameters['dual_fsm'],
-            A_plus=0.01, A_minus=0.01):
+            self, accumulator_depression=CommonTimingDependenceRecurrent.
+            default_parameters['accumulator_depression'],
+            accumulator_potentiation=CommonTimingDependenceRecurrent.
+            default_parameters['accumulator_potentiation'],
+            mean_pre_window=CommonTimingDependenceRecurrent.
+            default_parameters['mean_pre_window'],
+            mean_post_window=CommonTimingDependenceRecurrent.
+            default_parameters['mean_post_window'],
+            dual_fsm=CommonTimingDependenceRecurrent.
+            default_parameters['dual_fsm'], A_plus=0.01, A_minus=0.01):
 
         CommonTimingDependenceRecurrent.__init__(
             self, accumulator_depression=accumulator_depression,
