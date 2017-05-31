@@ -8,12 +8,10 @@ class TimingDependenceSpikeNearestPair(
         CommonTimingDependenaceSpikeNearestPair):
 
     def __init__(
-            self, tau_plus=
-            CommonTimingDependenaceSpikeNearestPair.default_parameters[
-                'tau_plus'],
-            tau_minus=
-            CommonTimingDependenaceSpikeNearestPair.default_parameters[
-                'tau_minus'],
+            self, tau_plus=CommonTimingDependenaceSpikeNearestPair.
+            default_parameters['tau_plus'],
+            tau_minus=CommonTimingDependenaceSpikeNearestPair.
+            default_parameters['tau_minus'],
             A_plus=0.01,  A_minus=0.01):
         CommonTimingDependenaceSpikeNearestPair.__init(
             self, tau_plus=tau_plus, tau_minus=tau_minus)

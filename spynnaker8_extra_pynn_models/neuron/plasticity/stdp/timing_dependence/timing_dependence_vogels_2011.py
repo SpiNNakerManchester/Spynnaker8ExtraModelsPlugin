@@ -28,6 +28,3 @@ class TimingDependenceVogels2011(CommonTimingDependenceVogels2011):
     @A_minus.setter
     def A_minus(self, new_value):
         self._a_minus = new_value
-
-
-
