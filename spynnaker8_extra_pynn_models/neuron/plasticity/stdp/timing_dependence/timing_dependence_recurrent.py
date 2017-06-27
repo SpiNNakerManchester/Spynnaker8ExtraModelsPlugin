@@ -1,6 +1,5 @@
-from spynnaker_extra_pynn_models.neuron.plasticity.stdp.\
-    timing_dependence.timing_dependence_recurrent import \
-    TimingDependenceRecurrent as CommonTimingDependenceRecurrent
+from spynnaker_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
+    import TimingDependenceRecurrent as CommonTimingDependenceRecurrent
 
 
 class TimingDependenceRecurrent(CommonTimingDependenceRecurrent):

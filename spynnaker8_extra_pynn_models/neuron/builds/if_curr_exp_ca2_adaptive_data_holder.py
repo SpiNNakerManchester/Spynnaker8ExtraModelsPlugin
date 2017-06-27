@@ -1,8 +1,6 @@
-from spynnaker.pyNN.models.neuron.abstract_population_vertex import \
-    AbstractPopulationVertex
-from spynnaker8.utilities.data_holder import DataHolder
-from spynnaker_extra_pynn_models.neuron.builds.if_curr_exp_ca2_adaptive \
-    import IFCurrExpCa2Adaptive
+from spynnaker.pyNN.models.neuron import AbstractPopulationVertex
+from spynnaker8.utilities import DataHolder
+from spynnaker_extra_pynn_models.neuron.builds import IFCurrExpCa2Adaptive
 
 
 class IfCurrExpCa2AdaptiveDataHolder(DataHolder):

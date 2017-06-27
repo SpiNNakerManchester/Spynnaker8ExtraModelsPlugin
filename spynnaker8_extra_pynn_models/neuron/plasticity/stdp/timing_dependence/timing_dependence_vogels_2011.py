@@ -1,6 +1,5 @@
 from spynnaker_extra_pynn_models.neuron.plasticity.stdp.timing_dependence\
-    .timing_dependence_vogels_2011 import TimingDependenceVogels2011 as \
-    CommonTimingDependenceVogels2011
+    import TimingDependenceVogels2011 as CommonTimingDependenceVogels2011
 
 
 class TimingDependenceVogels2011(CommonTimingDependenceVogels2011):
