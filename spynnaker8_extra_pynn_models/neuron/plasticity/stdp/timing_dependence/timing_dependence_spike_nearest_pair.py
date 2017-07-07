@@ -1,5 +1,4 @@
-from spynnaker_extra_pynn_models.neuron.plasticity.stdp.\
-    timing_dependence.timing_dependence_spike_nearest_pair \
+from spynnaker_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
     import TimingDependenceSpikeNearestPair as \
     CommonTimingDependenaceSpikeNearestPair
 
@@ -13,7 +12,7 @@ class TimingDependenceSpikeNearestPair(
             tau_minus=CommonTimingDependenaceSpikeNearestPair.
             default_parameters['tau_minus'],
             A_plus=0.01,  A_minus=0.01):
-        CommonTimingDependenaceSpikeNearestPair.__init(
+        CommonTimingDependenaceSpikeNearestPair.__init__(
             self, tau_plus=tau_plus, tau_minus=tau_minus)
 
         self._a_plus = A_plus

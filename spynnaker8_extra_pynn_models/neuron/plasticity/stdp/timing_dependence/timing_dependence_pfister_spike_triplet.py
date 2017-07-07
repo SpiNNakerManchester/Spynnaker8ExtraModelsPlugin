@@ -1,5 +1,4 @@
-from spynnaker_extra_pynn_models.neuron.plasticity.stdp.\
-    timing_dependence.timing_dependence_pfister_spike_triplet \
+from spynnaker_extra_pynn_models.neuron.plasticity.stdp.timing_dependence \
     import TimingDependencePfisterSpikeTriplet as \
     CommonTimingDependencePfisterSpikeTriplet
 
